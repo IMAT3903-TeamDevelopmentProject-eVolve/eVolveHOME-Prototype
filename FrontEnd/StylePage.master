@@ -16,7 +16,7 @@
 <body>
     <header>
         <img id="logo" src="media/img/logo.svg" />
-        <img src="media/img/ham.png" id="menu" alt="menubutton"/>
+        <img src="media/img/ham.svg" id="menu" alt="menubutton"/>
         <nav id="nav-menu">
             <ul>
                 <li><a href="#">All Products</a></li>

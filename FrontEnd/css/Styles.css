@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #ecf0f1;
 }
 header {
     height: 100px;
@@ -43,7 +44,7 @@ nav a {
 main {
     border: 1px solid red;
     min-height: 500px;
-    margin-top: 70px;
+    margin-top: 10px;
     display: block;
 }
 
@@ -59,7 +60,11 @@ main {
   display: block;
 }
 
-
+section {
+    display: block;
+    width: 100%;
+    border: 1px solid green;
+}
 
 
 
@@ -70,7 +75,7 @@ main {
 footer {
 	border: 1px solid red;
 	height: 300px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 
@@ -86,6 +91,9 @@ footer {
     nav li {
         display: inline-block;
     }
+    main {
+        margin-top: 70px;
+    }
 }   
 
 /* Desktop View */
@@ -96,6 +104,9 @@ footer {
 	}
     #menu {
         display: none;
+    }
+    main {
+        margin-top: 10px;
     }
 }
 
