@@ -1,0 +1,40 @@
+﻿/*
+
+
+*/
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet View */
+@media screen and (min-width: 480px) {
+        
+    
+}
+
+/* Desktop View */
+@media screen and (min-width: 1260px) {
+    
+
+}
+
+
