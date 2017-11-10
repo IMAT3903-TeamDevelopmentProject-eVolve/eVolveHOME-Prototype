@@ -1,5 +1,7 @@
 ﻿// This script file handles on page interation as well as screen responsive interation
 
+
+// function to handle toggle navigation 
 (function () {
 
     let menuButton = document.getElementById("menu");

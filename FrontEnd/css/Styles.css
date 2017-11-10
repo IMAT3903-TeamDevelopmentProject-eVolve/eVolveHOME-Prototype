@@ -5,11 +5,13 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ecf0f1;
+    background-color: #fff;
 }
 header {
     height: 100px;
@@ -58,25 +60,81 @@ main {
 }
 .show-menu {
   display: block;
+  z-index: 99999;
 }
 
 section {
     display: block;
     width: 100%;
-    border: 1px solid green;
+    
 }
-
-
-
-
-
-
 
 footer {
 	border: 1px solid red;
 	height: 300px;
 	margin-top: 20px;
 }
+
+
+/* These styles are for the home page Default.aspx */
+
+#hero {
+    height: 500px;
+    background-color: red;
+    width: 125%;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-image: url('../media/img/display/hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#hero div{
+    width: 350px;
+    height: 300px;
+    border: 1px solid pink;
+    margin-left: 15%;
+    color: #fff;
+}
+#hero h1 {
+    color:#fff;
+    font-size:250%;
+    
+}
+#hero h4 {
+    text-align:justify;
+}
+
+#featured-items {
+    height: 500px;
+    display: block;
+}
+#featured-items article {
+    border: 1px solid red;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#slider {
+    height: 500px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Tablet View */
@@ -107,6 +165,16 @@ footer {
     }
     main {
         margin-top: 10px;
+    }
+
+    #featured-items {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    #featured-items article {
+        height: 100%;
     }
 }
 
