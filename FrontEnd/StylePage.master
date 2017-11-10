@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- charser id-->
+	<meta charset="utf-8"/>
+    <!-- View Port ID -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--Style Sheet Link -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--Favicon Link Link -->
+    <link rel="shortcut icon" href="media/img/favicon.ico" />
+</head>
+<body>
+    <header>
+        <img id="logo" src="media/img/logo.svg" />
+        <img src="media/img/ham.png" id="menu" alt="menubutton"/>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Basket</a></li>
+                <img src="media/img/cart.png" alt="cart icon">
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

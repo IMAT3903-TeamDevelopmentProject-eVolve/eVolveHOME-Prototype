@@ -10,6 +10,54 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+header {
+    height: 100px;
+	display: block;
+    border: 1px solid red;
+}
+#logo {
+    float: left;
+    margin-left: 0;
+	width: 150px;
+    height: 100px;
+}
+nav {
+    border: 1px solid red;
+    display: none;
+    background-color: deeppink;
+    z-index: 1;
+}
+nav ul {
+	display: inline-block;
+	width: 100%;
+}
+
+nav li {
+	display: block;
+	padding: 10px;
+	font-size: 80%;
+}
+nav a {
+	text-decoration: none;
+}
+main {
+    border: 1px solid red;
+    min-height: 500px;
+    margin-top: 70px;
+    display: block;
+}
+
+#menu {
+  padding: 1em;
+  background: #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+.show-menu {
+  display: block;
+}
 
 
 
@@ -19,22 +67,37 @@ body {
 
 
 
-
-
-
-
+footer {
+	border: 1px solid red;
+	height: 300px;
+	margin-top: 50px;
+}
 
 
 /* Tablet View */
 @media screen and (min-width: 480px) {
-        
-    
-}
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    nav {
+        background-color: white;
+    }
+    nav li {
+        display: inline-block;
+    }
+}   
 
 /* Desktop View */
 @media screen and (min-width: 1260px) {
-    
-
+    nav {
+		float: right;
+        display: block;
+	}
+    #menu {
+        display: none;
+    }
 }
+
 
 

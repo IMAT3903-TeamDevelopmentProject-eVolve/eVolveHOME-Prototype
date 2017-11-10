@@ -1,21 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEndStyle.master" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/StylePage.master" %>
 
 <script runat="server">
 
 </script>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-
-
-
-
-
-
-
-
-
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <p>hello</p>
 </asp:Content>
 
