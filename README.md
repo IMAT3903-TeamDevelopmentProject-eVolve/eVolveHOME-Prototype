@@ -1,7 +1,7 @@
-<h1 style="text-align: center;">Final Year Project</h1>
+<h1>Final Year Project</h1>
 <h3>IMAT3903 - Team Development Project</h3>
----
-<h4>Project Details</h4>
+<hr>
+<h3>Project Details</h3>
 <dl>
 	<dt>Course:</dt>
 		<dd>BSc Computing</dd>
@@ -17,6 +17,4 @@
 		<dd>Lennis Ngugi</dd>
 </dl>
 
-
-# eVolveHOME-Prototype
-Prototype for eVolve Home Furnishings
+<hr>
