@@ -30,8 +30,20 @@
 		<dd>Data Dictionaries</dd>
 		<dd>Deployment Diagram</dd>
 		<dd>Sequence Diagram</dd>
-	<dt>Test Logs</dt>
-	<dt>Security COnsideration Discussion</dt>
-	<dt>Event Table</dt>
+	<dt>4. Test Logs</dt>
+	<dt>5. Security COnsideration Discussion</dt>
+	<dt>6. Event Table</dt>
 </dl>
 <hr>
+
+<h3>Prototype</h3>
+<h4>Wireframes</h4>
+<p>>Wire Frames Here<</p>
+<hr>
+
+<h3>Use Case Walk Through</h3>
+<p>>Walk Through Here<</p>
+
+<hr>
+
+<small>&copy; Copyright 2017, Ashley Redman</small>
