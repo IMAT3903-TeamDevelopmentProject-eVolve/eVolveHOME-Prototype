@@ -15,16 +15,16 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="media/img/logo.svg" />
+        <a href="Default.aspx"><img id="logo" src="media/img/logo.svg" /></a>
         <img src="media/img/ham.svg" id="menu" alt="menubutton"/>
         <nav id="nav-menu">
             <ul>
-                <li><a href="#">All Products</a></li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Social</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Basket</a></li>
+                <li><a href="AllProducts.aspx">All Products</a></li>
+                <li><a href="Collections.aspx">Collections</a></li>
+                <li><a href="Contact.aspx">Contact Us</a></li>
+                <li><a href="Social.aspx">Social</a></li>
+                <li><a href="SignUp.aspx">Log In</a></li>
+                <li><a href="Basket.aspx">Basket</a></li>
                 <img src="media/img/cart.png" alt="cart icon">
             </ul>
         </nav>
