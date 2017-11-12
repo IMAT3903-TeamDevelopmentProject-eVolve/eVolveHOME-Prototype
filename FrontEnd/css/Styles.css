@@ -206,9 +206,9 @@ footer {
 @media screen and (min-width: 1260px) {
     nav {
 		float: right;
-        display: block;
+        display: flex;
         width: 650px;
-        position:relative;
+        position:static;
         margin-top: 20px;
 	}
     #menu {
