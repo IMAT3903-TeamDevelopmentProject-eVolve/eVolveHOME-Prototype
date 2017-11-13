@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <a href="Default.aspx"><img id="logo" src="media/img/logo.svg" /></a>
+        <a href="Default.aspx"><h1 id="logo">eVolve HOME</h1></a>
         <img src="media/img/ham.svg" id="menu" alt="menubutton"/>
         <nav id="nav-menu">
             <ul>
@@ -23,9 +23,8 @@
                 <li><a href="Collections.aspx">Collections</a></li>
                 <li><a href="Contact.aspx">Contact Us</a></li>
                 <li><a href="Social.aspx">Social</a></li>
-                <li><a href="SignUp.aspx">Log In</a></li>
                 <li><a href="Basket.aspx">Basket</a></li>
-                <img src="media/img/cart.png" alt="cart icon">
+                <li><a href="SignUp.aspx">Log In</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +33,9 @@
 
     </asp:ContentPlaceHolder>
     </main>
-    <footer></footer>
+    <footer>
+        <small>Ashley Redman 2017</small>
+    </footer>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

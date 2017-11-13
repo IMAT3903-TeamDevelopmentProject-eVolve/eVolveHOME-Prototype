@@ -16,18 +16,18 @@ body {
 header {
     height: 100px;
 	display: block;
-    border: 1px solid red;
 }
 #logo {
     float: left;
     margin-left: 0;
-	width: 150px;
+    margin-top: 30px;
+	width: 300px;
     height: 100px;
+    color:#2c3e50;
 }
 nav {
-    border: 1px solid red;
     display: none;
-    background-color: deeppink;
+    background-color: #fff;
     margin-top: 100px;
     position: absolute;
     z-index: 10;
@@ -43,12 +43,22 @@ nav li {
 	display: block;
 	padding: 10px;
 	font-size: 80%;
+    border-bottom: 2px solid #fff;
+
+}
+nav li:hover {
+    border-bottom: 2px solid #000;
 }
 nav a {
 	text-decoration: none;
+    color:#000;
+    font-weight: bold;
 }
+nav ul:nth-child(6) {
+    display:none;
+}
+
 main {
-    border: 1px solid black;
     min-height: 500px;
     margin-top: 10px;
     display: block;
@@ -73,6 +83,18 @@ section {
     
 }
 
+.view-button {
+    color: #fff;
+    background-color:#2c3e50;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.view-button:hover {
+    background-color:#34495e;
+}
+
 footer {
 	
 	height: 500px;
@@ -85,14 +107,19 @@ footer {
     margin-left: 50%;
     transform: translate(-50%);
 }
-
+small {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 100%;
+    font-size:large;
+}
 
 /* These styles are for the home page Default.aspx */
 
 #hero {
     height: 500px;
-    background-color: red;
-    width: 125%;
+    width: 100%;
     display: block;
     margin-left: 50%;
     transform: translate(-50%);
@@ -105,8 +132,8 @@ footer {
 #hero div{
     width: 350px;
     height: 300px;
-    border: 1px solid pink;
-    margin-left: 15%;
+    margin-left: 10%;
+    padding-top: 50px;
     color: #fff;
 }
 #hero h1 {
@@ -118,29 +145,30 @@ footer {
     text-align:justify;
 }
 
+#feature-title {
+    display: flex;
+    justify-content: center;
+}
 #featured-items {
     height: 500px;
     display: flex;
-    border: 1px solid green;
     justify-content: center;
     align-items: center;
 
+    margin-top: -30px;
 }
 #featured-items article {
     height: 500px;
-    border: 1px solid red;
     width: 95%;
     justify-content: center;
     text-align: center;
     align-content: center;
-    margin-top: 10px;
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
 #featured-items article img {
-    border: 1px solid pink;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 300px;
     height: 300px;
 }
@@ -153,9 +181,9 @@ footer {
     justify-content: center;
 }
 .featured p {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .featured:nth-child(3) {
     display:none;
@@ -164,16 +192,38 @@ footer {
     display:none;
 }
 
-#slider {
+
+#offers {
+    background-image: url('../media/img/display/hero2.jpeg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
     height: 500px;
-    display: block;
-    border: 1px solid red;
+    display: flex;
     margin-top: 20px;
 }
+#offers img {
+    width: 100px;
+}
 
-
-
-
+.offer-box {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content:center;
+    align-items: center;
+    background-color: #fff;
+    margin: 100px 20px 20px 20px;
+}
+.offer-box:nth-child(2) {
+    display:none;
+}
+.offer-box:nth-child(3) {
+    display:none;
+}
+.offer-box:nth-child(4) {
+    display:none;
+}
 
 
 
@@ -197,8 +247,24 @@ footer {
     nav li {
         display: inline-block;
     }
+    nav li:nth-child(6) {
+    background-color:#1abc9c;
+    border-radius:15%;
+    border-bottom: none;
+    margin-left: 10px;
+    }
+    nav li:hover:nth-child(6) {
+        background-color:#2ecc71;
+    }
+
     main {
         margin-top: 70px;
+    }
+    .offer-box {
+        width: 50%;
+    }
+    .offer-box:nth-child(2) {
+        display: flex;
     }
 }   
 
@@ -232,6 +298,18 @@ footer {
     }
     .featured:nth-child(3) {
         display: block;
+    }
+    .offer-box {
+        width: 33.33%;
+    }
+    .offer-box:nth-child(2) {
+        display: flex;
+    }
+    .offer-box:nth-child(3) {
+        display: flex;
+    }
+    .offer-box:nth-child(4) {
+        display: flex;
     }
 }
 
