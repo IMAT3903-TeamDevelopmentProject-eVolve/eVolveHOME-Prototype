@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <section id="hero">
-        <div id="welcome-text">
+        <div>
             <h1>Text Here</h1>
             <h4>Lorem ipsum dolor sit amet, lectus vitae faucibus,
                 at diam donec, pede velit sapien, dolor sapien 

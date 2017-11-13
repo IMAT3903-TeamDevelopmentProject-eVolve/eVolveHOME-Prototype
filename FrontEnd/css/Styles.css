@@ -80,7 +80,7 @@ main {
 section {
     display: block;
     width: 100%;
-    
+/* border here for design*/
 }
 
 .view-button {
@@ -192,7 +192,6 @@ small {
     display:none;
 }
 
-
 #offers {
     background-image: url('../media/img/display/hero2.jpeg');
     background-position: center;
@@ -224,6 +223,94 @@ small {
 .offer-box:nth-child(4) {
     display:none;
 }
+
+
+#filter-bar h3 {
+    display: flex;
+    justify-content: center;
+}
+#filter-bar ul {
+    justify-content: center;
+}
+#filter-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#filter-list li {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#filter-list li select {
+    width: 200px;
+}
+
+
+#AllProducts {
+    height: 2000px;
+}
+#AllProducts table {
+    width: 100%;
+    height: 800px;
+}
+#AllProducts table td {
+    width: 25%;
+    height: 380px;
+}
+#AllProducts table td div {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#AllProducts table td img {
+    width: 250px;
+    margin: auto;
+    
+}
+#AllProducts table td button {
+    width: 100px;
+    margin: auto;
+    color: #fff;
+    background-color:#2c3e50;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
