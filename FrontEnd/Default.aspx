@@ -25,7 +25,7 @@
                at diam donec, pede velit sapien, dolor sapien 
                tristique convallis.
             </p>
-            <button class="view-button">View</button>
+            <a href="#" class="ViewButton">View</a>
         </article>
         <article class="featured">
             <img src="media/img/product/2sofa.jpg" alt="Alternate Text" />
@@ -34,7 +34,7 @@
                at diam donec, pede velit sapien, dolor sapien 
                tristique convallis.
             </p>
-            <button class="view-button">View</button>
+            <a href="#" class="ViewButton">View</a>
         </article>
         <article class="featured">
             <img src="media/img/product/3sofa.jpg" alt="Alternate Text" /><p>
@@ -42,7 +42,7 @@
                at diam donec, pede velit sapien, dolor sapien 
                tristique convallis.
             </p>
-            <button class="view-button">View</button>
+            <a href="#" class="ViewButton">View</a>
         </article>
     </section>
     <section id="offers">

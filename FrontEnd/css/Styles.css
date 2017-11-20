@@ -16,6 +16,7 @@ body {
 header {
     height: 100px;
 	display: block;
+    border-bottom: 1px solid #dedede;
 }
 #logo {
     float: left;
@@ -64,6 +65,10 @@ main {
     display: block;
 }
 
+input[type=date] {
+    
+}
+
 #menu {
   padding: 1em;
   background: #fff;
@@ -80,10 +85,18 @@ main {
 section {
     display: block;
     width: 100%;
-/* border here for design*/
+    
+/*border here for design*/
+    
 }
 
-.view-button {
+.view-button:hover {
+    background-color:#34495e;
+}
+
+#buttonClass {
+    width: 100px;
+    margin: auto;
     color: #fff;
     background-color:#2c3e50;
     text-decoration: none;
@@ -91,9 +104,9 @@ section {
     padding: 10px 20px;
     font-family: 'Montserrat', sans-serif;
 }
-.view-button:hover {
-    background-color:#34495e;
-}
+
+
+
 
 footer {
 	
@@ -113,6 +126,20 @@ small {
     align-items:flex-end;
     height: 100%;
     font-size:large;
+}
+
+.ViewButton {
+    height: 20px;
+    width: 80px;
+    color: #fff;
+    background-color:#2c3e50;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 
 /* These styles are for the home page Default.aspx */
@@ -283,31 +310,187 @@ small {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Styles for the Product Details Page */
+
+#ProductPreview {
+    height: 600px;
+    width: 40%;
+    margin-left: 5%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ProductPreview img {
+    width: 450px;
+    display: block;
+    margin: auto;
+}
+.ProductMini {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+.ProductMini article {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.ProductMini article img {
+    width: 50px;
+}
+
+#ProductDetail {
+    height: 600px;
+    width: 49%;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ProductSpec {
+    height: 600px;
+    display: inline-block;
+    width: 50%;
+}
+.ProductSpec p {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: small;
+}
+.ProductSpec li {
+    font-size: small;
+}
+.ProductPurchase {
+    height: 600px;
+    float: right;
+    width: 50%;
+    display: inline-block;
+}
+.ProductPurchase div {
+    width: 150px;
+    height: 30px;
+    background-color:#2c3e50;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    text-decoration: none;
+}
+.ProductPurchase a {
+    text-decoration: none !important;
+}
+
+.SimilarProducts {
+    height: 300px
+}
+.SimilarProducts h5 {
+    text-align: center;
+}
+.SimilarProducts div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.SimilarProducts div article {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
 
 
+/* Syles for the basket page */
+
+#BasketDisplay {
+    height: 650px;
+}
+#BasketDisplay table {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    border: none;
+    border-collapse: collapse;
+    border-bottom: 3px solid #dedede;
+}
+
+#BasketDisplay table th {
+    height: 50px;
+    width: 300px;
+    border-bottom: 1px solid #dedede;
+}
+#BasketDisplay table tr {
 
 
+}
+#BasketDisplay table td {
+    width: 300px;
+    height: 100px;
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+}
+#BasketDisplay img {
+    width: 50px;
+}
+#BasketDisplay h4 {
+    display: inline-block;
+}
+.ContinueButton div {
+    width: 200px;
+    height: 50px;
+    background-color:#2c3e50;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
 
 
+/* Styles for the choose delivery page  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#ChooseDelivery {
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#ChooseDelivery section {
+    width: 30%;
+    height: 600px;
+}
+#ChooseDelivery section h3 {
+    text-align: center;
+}
+#ChooseDelivery section div {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
+}
+#ChooseDelivery section div ul li {
+    margin-top: 50px;
+    list-style-type: none;
+}
+#ChooseDelivery section div a div {
+    text-align: center;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    background-color: #2c3e50;
+}
+#ChooseDelivery section div a {
+    text-decoration: none;
+}
 
 
 

@@ -61,28 +61,28 @@
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/1sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="ProductDetail.aspx" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td>
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/2sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td>
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/3sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td>
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/4sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
             </tr>
@@ -91,23 +91,23 @@
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/sofa5.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/sofa6.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/ugly.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/draw1.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
             </tr>
             <tr>
@@ -115,23 +115,23 @@
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/draw2.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/draw3.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/cab1.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/cab2.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
             </tr>
             <tr>
@@ -139,23 +139,23 @@
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/cab3.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/char1.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/char2.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/char3.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
             </tr>
             <tr>
@@ -163,23 +163,23 @@
                     <div>
                         <h4>Title</h4>
                         <img src="media/img/product/char4.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div>
                 </td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/1sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/1sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
                 <td><div>
                         <h4>Title</h4>
                         <img src="media/img/product/1sofa.jpg" alt="sofa1" />
-                        <button>View</button>
+                        <a href="#" class="ViewButton">View</a>
                     </div></td>
             </tr>
         </table>
