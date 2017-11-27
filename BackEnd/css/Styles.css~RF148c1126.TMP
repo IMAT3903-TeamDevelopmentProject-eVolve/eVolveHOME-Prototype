@@ -1,0 +1,69 @@
+﻿/*
+    Styles for the back end - Ash R
+    This site is NOT responsive - desktop first
+*/
+
+/* Google fonts import of font family - Nunito*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* Browsers reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+/* 
+    Styles for LOGIN HERE - No master page
+*/
+
+/*------------------------------------------------------------*/
+
+
+/*
+    Master Page Styles below
+*/
+
+header {
+    position:absolute;
+    left:0; top:0px; bottom: 0;
+    width: 5%;
+    background-color: #233237;
+    border-right: 5px solid #dedede;
+}
+header img {
+    width: 50px;
+}
+header ul {
+    margin-top: 100px;
+}
+header li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    list-style-type: none;
+}
+header li img {
+    display: block;
+    margin: auto;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+header li img:hover {
+    opacity: 0.6;
+}
+body {
+    background-color: grey;
+}
+main {
+    position: absolute;
+    left:5%; top:0px; right:0; bottom:0;
+    background-color: #34495e;
+}
+#logo {
+    width: 80%;
+    height: 70px;
+    background-color: pink;
+    margin: 10%;
+}

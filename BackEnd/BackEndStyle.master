@@ -13,52 +13,54 @@
     <link rel="stylesheet" type="text/css" href="css/Styles.css" />
     <!--Favicon Link Link -->
     <link rel="shortcut icon" href="media/favicon.ico" />
+    <!-- Add jQuery 3.2.1 -->
+    <script type="text/javascript" src="js/jquery3.2.1.js"></script>
 </head>
 <body>
     <header>
         <figure id="logo">
-            <img src="#" alt="Logo" />
+            <img src="media/logo.ico" alt="Logo" />
         </figure>
         <ul>
             <li>
                 <a href="Default.aspx">
-                    <img src="media/ico/control-ico/png/house.png" alt="homebutton" />
+                    <img src="media/ico/control-ico/png/home.png" alt="homebutton" />
+                </a>
+            </li>
+            <li>
+                <a href="ProductControl.aspx">
+                    <img src="media/ico/control-ico/png/tag.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="CustomerControl.aspx">
+                    <img src="media/ico/control-ico/png/customers.png" alt="Add Product" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="media/ico/control-ico/png/price-tag-3.png" alt="Add Product" />
+                    <img src="media/ico/control-ico/png/cal.png" alt="Add Product" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="media/ico/control-ico/png/user-43.png" alt="Add Product" />
+                    <img src="media/ico/control-ico/png/lists.png" alt="Add Product" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="media/ico/control-ico/png/list-3.png" alt="Add Product" />
+                    <img src="media/ico/control-ico/png/database.png" alt="Add Product" />
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="media/ico/control-ico/png/calendar-23.png" alt="Add Product" />
+                    <img src="media/ico/control-ico/png/exit.png" alt="Log Out" />
                 </a>
+                
             </li>
-            <li>
-                <a href="#">
-                    <img src="media/ico/control-ico/png/notepad-3.png" alt="Add Product" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="media/ico/control-ico/png/database-9.png" alt="Add Product" />
-                </a>
-            </li>
-            
         </ul>
     </header>
-    <main>
+    <main class="control-page">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
         </asp:ContentPlaceHolder>
@@ -68,5 +70,6 @@
     </footer>
     <!-- Script link -->
     <script type="text/javascript" src="js/scripts.js"></script>
+    
 </body>
 </html>
