@@ -2,23 +2,71 @@
 
 <!DOCTYPE html>
 
-<script runat="server">
-
-</script>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <!-- charser id-->
+	<meta charset="utf-8"/>
+    <!-- View Port ID -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--Style Sheet Link -->
+    <link rel="stylesheet" type="text/css" href="css/Styles.css" />
+    <!--Favicon Link Link -->
+    <link rel="shortcut icon" href="media/favicon.ico" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
+    <header>
+        <figure id="logo">
+            <img src="#" alt="Logo" />
+        </figure>
+        <ul>
+            <li>
+                <a href="Default.aspx">
+                    <img src="media/ico/control-ico/png/house.png" alt="homebutton" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/price-tag-3.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/user-43.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/list-3.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/calendar-23.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/notepad-3.png" alt="Add Product" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="media/ico/control-ico/png/database-9.png" alt="Add Product" />
+                </a>
+            </li>
+            
+        </ul>
+    </header>
+    <main>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+
         </asp:ContentPlaceHolder>
-    </div>
-    </form>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Script link -->
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
