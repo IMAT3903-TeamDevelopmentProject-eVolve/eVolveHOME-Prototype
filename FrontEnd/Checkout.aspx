@@ -28,8 +28,7 @@
             <h3>Payment</h3>
             <div>
                 <aside id="pay-title">
-                    Payment Details
-                    <img src="media/img/icons/cards.png" alt="" />
+                    <h3>Payment Details</h3>
                 </aside>
                 <article id="CardNumber">
                     Card Number<br /> 
@@ -43,7 +42,8 @@
                     CV Code<br />
                     <input type="text" value="" placeholder="CVC Code"/><br />
                 </article>
-                <input type="submit" value="Pay" id="SubmitPay" />
+                <a href="Default.aspx"><input type="submit" value="Pay" id="SubmitPay" /></a>
+                <img src="media/img/icons/cards.png" alt="card icons" id="card-icons" />
             </div>
         </section>
         

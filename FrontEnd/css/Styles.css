@@ -85,9 +85,7 @@ input[type=date] {
 section {
     display: block;
     width: 100%;
-    border: 1px solid red;
-/*border here for design*/
-    
+/*border here for design*/  
 }
 
 .view-button:hover {
@@ -321,7 +319,7 @@ small {
     margin-bottom: 10px;
 }
 #ProductPreview img {
-    width: 450px;
+    width: 350px;
     display: block;
     margin: auto;
 }
@@ -338,12 +336,12 @@ small {
     align-items: center;
 }
 .ProductMini article img {
-    width: 50px;
+    width: 100px!important;
 }
 
 #ProductDetail {
     height: 600px;
-    width: 49%;
+    width: 50%;
     display: inline-block;
     float: right;
     margin-top: 10px;
@@ -366,7 +364,7 @@ small {
 .ProductPurchase {
     height: 600px;
     float: right;
-    width: 50%;
+    width: 30%;
     display: inline-block;
 }
 .ProductPurchase div {
@@ -387,6 +385,9 @@ small {
 }
 .SimilarProducts h5 {
     text-align: center;
+}
+.SimilarProducts img {
+    width: 230px;
 }
 .SimilarProducts div {
     width: 100%;
@@ -503,10 +504,12 @@ small {
 #Orderreview section {
     height: 500px;
     width: 40%;
-    border: 1px solid green;
 }
 #Orderreview section h3 {
     text-align: center;
+}
+#Orderreview article {
+    padding: 20px;
 }
 #Orderreview table {
     width: 100%;
@@ -527,40 +530,248 @@ small {
     margin: auto;
 }
 #Orderreview aside {
+    color: #000;
+    background-color: #2ecc71;
     height: 50px;
     border: 2px solid black;
-    border-top-right-radius: 8%;
-    border-top-left-radius: 8%;
     line-height: 2em;
 }
 #Orderreview aside img {
     display: inline-block;
     float: right;
     width: 170px;
-    border: 1px solid red;
+}
+#Orderreview a {
+    text-decoration: none;
+}
+#pay-title h3 {
+    line-height: 1em;
 }
 
 #CardNumber {
     height: 50px;
-    border: 1px solid blue;
 }
-#CardNumber input=text
 #ExpirDate {
     height: 50px;
-    border: 1px solid blue;
 }
 #CVcode {
     height: 50px;
-    border: 1px solid blue;
 }
 #SubmitPay {
+    padding: 0;
+    border: none;
+    display: block;
+    margin: auto;
     width: 100px;
     height: 50px;
     background-color:#2ecc71;
-    border: 1px solid black;
     color: black;
     font-size: medium;
 }
+#SubmitPay:hover {
+    border: 1px solid black;
+}
+#card-icons {
+    
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+}
+
+
+/* Styles for the collection page */
+
+.collections {
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.collections figure {
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collections figcaption {
+    color: #fff;
+    font-size: 3em;
+    opacity: 0.8;
+}
+.collections figure:hover {
+    opacity: 0.4;
+}
+.collections figcaption:hover {
+    opacity: 1;
+}
+
+#collection-1 {
+    background-image: url('../media/img/collections/cab.jpeg');
+}
+#collection-2 {
+    background-image: url('../media/img/collections/bed.jpg');
+}
+#collection-3 {
+    background-image: url('../media/img/collections/kitchen.jpeg');
+}
+#collection-4 {
+    background-image: url('../media/img/collections/bath.jpeg');
+}
+#collection-5 {
+    background-image: url('../media/img/collections/garden.jpg');
+}
+#collection-6 {
+    background-image: url('../media/img/collections/office.jpeg');
+}
+/* Styles for the contacts us page */
+
+#contact-area {
+    height: 600px;
+}
+#contact-area div {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: 450px;
+}
+#contact-area ul {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 450px;
+    list-style-type: none;
+}
+#contact-area ul li {
+    padding: 10px;
+}
+#contact-area ul li img {
+    width: 20px;
+}
+#send-icon {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    background-color: #2c3e50;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+}
+
+/* Styles for the social page */
+#social-area {
+    height: 600px;
+}
+#social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#social-links figure {
+    display: flex;
+    width: 20%;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 10%;
+}
+#social-links figure figcaption {
+    color: #fff;
+    font-size: 3em;
+}
+#social-1 {
+    background-image: url('../media/img/social/fb1.jpeg');
+}
+#social-2 {
+    background-image: url('../media/img/social/twitter1.jpeg');
+}
+#social-3 {
+    background-image: url('../media/img/social/insat1.jpeg');
+}
+#social-4 {
+        background-image: url('../media/img/social/yt.jpg');
+
+}
+
+
+/* Styles for the Login / Sign Up Page */
+
+#access-area {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+#access-area article {
+    display: flex;
+    width: 45%;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+}
+#access-area article h3 {
+    display: block;
+    text-align: center;
+}
+#access-area article form {
+    width: 100%;
+    height: 500px;
+}
+#access-area table {
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+#access-area table td {
+}
+#access-area table small {
+    font-size: 0.7em;
+    display: inline-block;
+}
+#access-area input[type=text], input[type=email], input[type=password], select {
+    border-radius: 5px;
+    padding: 0;
+    border: 1px solid #dedede;
+    height: 2.5em;
+    width: 200px;
+}
+#access-area input[type=submit] {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: #2c3e50;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+}
+#access-area table td:nth-child(1) {
+    text-align: right;
+    font-size: 0.9em;
+}
+#access-area table td:nth-child(2) {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
 
 
 /* Tablet View */
