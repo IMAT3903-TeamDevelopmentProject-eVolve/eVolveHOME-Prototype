@@ -51,22 +51,30 @@ header img {
 }
 header ul {
     margin-top: 50px;
-    border-top: 1px solid #fff;
+
 }
 header li {
     width: 100%;
-    height: 50px;
+    height: 100px;
     text-align: center;
     list-style-type: none;
+    margin-bottom: 10px;
 }
 header li img {
     display: block;
     margin: auto;
-    margin-top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6
+    opacity: 0.6;
+    width: 35px;
 }
 header li img:hover {
+    opacity: 1;
+}
+header li a, p {
+    color: #27ae60;
+    text-decoration: none;
+    opacity: 0.6
+}
+header li a, p:hover {
     opacity: 1;
 }
 body {
@@ -89,7 +97,6 @@ main {
     width: 90%;
     display: block;
     margin: auto;
-    height: 900px;
     margin-top: 20px;
 }
 .page-title {
@@ -109,14 +116,14 @@ main {
 .quickview-area {
     width: 100%;
     margin-top: 50px;
-    height: 700px;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 .quickview-area article {
-    width: 49%;
-    height: 350px;
+    width: 45%;
+    height: 700px;
 }
 .quickview-area article h4 {
     line-height: 4em;
@@ -124,9 +131,8 @@ main {
     font-weight:100;
 }
 .quickview-area article table {
-    width: 100%;
-    height: 250px;
-
+    width: 90%;
+    height: 700px;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
@@ -136,19 +142,21 @@ main {
 }
 .quickview-area article table th {
     height: 30px;
-    font-weight: 100;
+    font-size: medium;
 }
 .quickview-area article table td {
-    width: 100px;
+    width: 300px;
     text-align: center;
-    border: 1px solid #27ae60;
-    color: #fff;
 
+    color: #fff;
+    height: 50px;
 }
+
+
 
 /* global styles for object control */
 .control-page {
-    height: 1800px;
+    height: 2000px;
 }
 
 .obj-control {
@@ -161,21 +169,21 @@ main {
     line-height: 1.5em;
 }
 .obj-control aside {
-    width: 49%;
+    width: 50%;
     height: 1600px;
 }
 .obj-control aside article {
     width: 90%;
-    
+    border-bottom: 1px solid #27ae60;
     display: flex;
     margin: auto;
     margin-top: 10px;
-    height: 500px;
+    height: 600px;
 }
 
 .obj-control input[type=text], select, textarea {
     line-height: 2em;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
 }
 
@@ -189,34 +197,35 @@ input[type=submit] {
     height: 40px;
     padding: 0;
     border: none;
+    border-radius: 5px;
 }
 
 .obj-add, .obj-edit, .obj-del {
-    
-}
-.obj-add {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.obj-add h4 {
 
-}
-
-#add-product-form {
+.product-form {
     margin-top: 20px;
     color: #000;
 }
-#add-product-form td {
-    padding: 10px;
-}
-#add-product-form:nth-child(2) {
+
+.product-form:nth-child(2) {
     text-align: left;
 }
 .error {
     color: red;
 }
-
+#add-form td {
+    padding: 10px;
+}
+#edit-form td {
+    padding: 10px;
+}
+#del-form td {
+    padding: 10px;
+}
 
 .all-products {
     width: 100%;
@@ -242,4 +251,11 @@ input[type=submit] {
     font-size: 18px;
     padding:2px;
     border:0;
+}
+
+#OrdersTo {
+    width: 80%;
+}
+#PastOrders {
+    width: 80%;
 }
