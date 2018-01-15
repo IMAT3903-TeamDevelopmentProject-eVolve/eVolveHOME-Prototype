@@ -7,3 +7,12 @@ C:\Users\Ashley Redman\Documents\GitHub\IMAT3903\eVolveHOME-Prototype\HOME_Solut
 C:\Users\Ashley Redman\Documents\GitHub\IMAT3903\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfo.cs
 C:\Users\Ashley Redman\Documents\GitHub\IMAT3903\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.dll
 C:\Users\Ashley Redman\Documents\GitHub\IMAT3903\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.pdb
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.deps.json
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.dll
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.pdb
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfo.cs
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.dll
+C:\Users\Ash\Documents\Github\Year-3\IMAT3903 - TeamDevelopment\eVolveHOME-Prototype\HOME_Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.pdb

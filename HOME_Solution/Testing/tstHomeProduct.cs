@@ -30,7 +30,7 @@ namespace Testing
         {
             clsHomeProduct AHomeProduct = new clsHomeProduct();
 
-            string TestData = "TestProductName";
+            string TestData = "Name";
 
             AHomeProduct.Name = TestData;
 
@@ -54,7 +54,7 @@ namespace Testing
         {
             clsHomeProduct AHomeProduct = new clsHomeProduct();
 
-            string TestData = "TestProductType";
+            string TestData = "Type";
 
             AHomeProduct.Type = TestData;
 
@@ -66,7 +66,7 @@ namespace Testing
         {
             clsHomeProduct AHomeProduct = new clsHomeProduct();
 
-            string TestData = "TestProductCollection";
+            string TestData = "Collection";
 
             AHomeProduct.Collection = TestData;
 
@@ -78,7 +78,7 @@ namespace Testing
         {
             clsHomeProduct AHomeProduct = new clsHomeProduct();
 
-            string TestData = "TestProductDescription";
+            string TestData = "Desc";
 
             AHomeProduct.Description = TestData;
 
@@ -105,11 +105,11 @@ namespace Testing
             //boolean var to store the result of the validation
             Boolean OK = false;
             //create some test data to pass to the methid
-            string Name = "TestProductName";
+            string Name = "Name";
             Int32 Price = 21;
-            string Type = "TestProductType";
-            string Collection = "TestProductCollection";
-            string Description = "testProductDescription";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Desc";
             string Dimentions = "31,31,31";
             //invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
@@ -159,7 +159,7 @@ namespace Testing
             Boolean OK = true;
             Int32 ProductID = 1;
             Found = AHomeProduct.Find(ProductID);
-            if (AHomeProduct.Name != "TestProductName")
+            if (AHomeProduct.Name != "tName")
             {
                 OK = false;
             }
@@ -189,7 +189,7 @@ namespace Testing
             Boolean OK = true;
             Int32 ProductID = 1;
             Found = AHomeProduct.Find(ProductID);
-            if (AHomeProduct.Type != "TestProductType")
+            if (AHomeProduct.Type != "Type")
             {
                 OK = false;
             }
@@ -204,7 +204,7 @@ namespace Testing
             Boolean OK = true;
             Int32 ProductID = 1;
             Found = AHomeProduct.Find(ProductID);
-            if (AHomeProduct.Collection != "TestProductCollection")
+            if (AHomeProduct.Collection != "Collection")
             {
                 OK = false;
             }
@@ -219,7 +219,7 @@ namespace Testing
             Boolean OK = true;
             Int32 ProductID = 1;
             Found = AHomeProduct.Find(ProductID);
-            if (AHomeProduct.Description != "TestProductDescription")
+            if (AHomeProduct.Description != "Description")
             {
                 OK = false;
             }
@@ -234,7 +234,7 @@ namespace Testing
             Boolean OK = true;
             Int32 ProductID = 1;
             Found = AHomeProduct.Find(ProductID);
-            if (AHomeProduct.Dimentions != "TestProductDimentions")
+            if (AHomeProduct.Dimentions != "31,31,31")
             {
                 OK = false;
             }
@@ -253,10 +253,10 @@ namespace Testing
             //Test Data for the method
             string Name = ""; // must contain 1 char
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
@@ -271,14 +271,14 @@ namespace Testing
             //Test Data for the method
             string Name = "A"; // must contain 1 char
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -289,14 +289,14 @@ namespace Testing
             //Test Data for the method
             string Name = "AA"; // must contain 1 char
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -307,14 +307,14 @@ namespace Testing
             //Test Data for the method
             string Name = "AAAAAAAAA"; // must contain 1 char (9 char)
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -325,10 +325,10 @@ namespace Testing
             //Test Data for the method
             string Name = "AAAAAAAAAA"; // must contain 1 char (10 char)
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
@@ -343,10 +343,10 @@ namespace Testing
             //Test Data for the method
             string Name = "AAAAAAAAAAA"; // must contain 1 char (11 char)
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
@@ -361,14 +361,14 @@ namespace Testing
             //Test Data for the method
             string Name = "AAAAA"; // must contain 1 char (5 char)
             Int32 Price = 21;
-            string Type = "ExampleType";
-            string Collection = "ExampleCollection";
-            string Description = "ExampleDescription";
-            string Dimentions = "ExampleDimentions";
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
             // invoke the method
             OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
             //test for result 
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -380,6 +380,45 @@ namespace Testing
             string Name = ""; // must contain 1 char (500 char)
             Name = Name.PadRight(500, 'A'); // fill var with 500 'A'
             Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        // Price Var testing - add later - var.length => X
+
+        /*
+        [TestMethod]
+        public void ProductPriceMin()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name";
+            Int32 Price = 0; // no chars
+            string Type = "ExampleType";
+            string Collection = "ExampleCollection";
+            string Description = "ExampleDescription";
+            string Dimentions = "ExampleDimentions";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductPriceMinLessOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; 
+            Int32 Price = -1; // no chars
             string Type = "ExampleType";
             string Collection = "ExampleCollection";
             string Description = "ExampleDescription";
@@ -389,5 +428,537 @@ namespace Testing
             //test for result 
             Assert.IsFalse(OK);
         }
+
+        //
+
+        [TestMethod]
+        public void ProductPriceMinPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name";
+            Int32 Price = 1; // no chars
+            string Type = "ExampleType";
+            string Collection = "ExampleCollection";
+            string Description = "ExampleDescription";
+            string Dimentions = "ExampleDimentions";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+        
+
+        [TestMethod]
+        public void ProductPriceMid()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name";
+            Int32 Price = 500; // no chars
+            string Type = "ExampleType";
+            string Collection = "ExampleCollection";
+            string Description = "ExampleDescription";
+            string Dimentions = "ExampleDimentions";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+        */
+
+        // Testing for Product Type
+
+        [TestMethod]
+        public void ProductTypeMin()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "T";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMinLessOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMinPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "AA";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMid()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "AAAAA";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "AAAAAAAAAA";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMaxPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "AAAAAAAAAAA";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeMaxLessOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "AAAAAAAAA";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductTypeExtremeMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "";
+            Type = Type.PadRight(500, 'A');
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        // Testing for collection data input
+        [TestMethod]
+        public void ProductCollectionMin()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = ""; // No chars as allows Nulls
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductCollectionMinPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "";
+            Collection = Collection.PadRight(1, 'A');
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductCollectionMid()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "";
+            Collection = Collection.PadRight(10, 'A');
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductCollectionMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "";
+            Collection = Collection.PadRight(20, 'A');
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductCollectionMaxPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "";
+            Collection = Collection.PadRight(21, 'A');
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProductCollectionExtremeMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "";
+            Collection = Collection.PadRight(500, 'A');
+            string Description = "Description";
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        // Testing for product description - 50 chars max allows null
+
+        [TestMethod]
+        public void ProductDescriptionMin()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDescriptionMinPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            Description = Description.PadRight(1, 'A');
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDescriptionMid()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            Description = Description.PadRight(25, 'A');
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDescriptionMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            Description = Description.PadRight(50, 'A');
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDescriptionMaxPlusOnee()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            Description = Description.PadRight(51, 'A');
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProductDescriptionExtremeMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = ""; // allows null
+            Description = Description.PadRight(500, 'A');
+            string Dimentions = "31,31,31";
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        // Testing for dimentions input, 15 char max - allows null
+
+        [TestMethod]
+        public void ProductDimentionsMin()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDimentionsMinPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            Dimentions = Dimentions.PadRight(1, 'A');
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDimentionsMid()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            Dimentions = Dimentions.PadRight(7, 'A');
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDimentionsMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            Dimentions = Dimentions.PadRight(15, 'A');
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void ProductDimentionsMaxPlusOne()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            Dimentions = Dimentions.PadRight(16, 'A');
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProductDimentionsExtremeMax()
+        {
+            clsHomeProduct AHomeProduct = new clsHomeProduct();
+            Boolean OK = false;
+            //Test Data for the method
+            string Name = "Name"; // must contain 1 char
+            Int32 Price = 21;
+            string Type = "Type";
+            string Collection = "Collection";
+            string Description = "Description";
+            string Dimentions = ""; //allows null
+            Dimentions = Dimentions.PadRight(500, 'A');
+            // invoke the method
+            OK = AHomeProduct.Valid(Name, Price, Type, Collection, Description, Dimentions);
+            //test for result 
+            Assert.IsFalse(OK);
+        }
+
     }
 }
