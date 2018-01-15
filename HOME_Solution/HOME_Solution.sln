@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FrontEnd", "..\FrontEnd\", "{3739C0C1-B8A6-4CBF-9C63-145258E6017A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{f4d429bb-5a5f-4b28-bff7-119f91b29507}|ClassLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61996"
 		Debug.AspNetCompiler.PhysicalPath = "..\FrontEnd\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61996\"
@@ -28,6 +29,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BackEnd", "..\BackEnd\", "{EC98368B-719B-4A28-A804-4583F5A0F39F}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{f4d429bb-5a5f-4b28-bff7-119f91b29507}|ClassLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61998"
 		Debug.AspNetCompiler.PhysicalPath = "..\BackEnd\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61998\"
@@ -47,17 +49,37 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BackEnd", "..\BackEnd\", "{
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{D914B648-DC1A-4149-B27F-0DC139CBDBE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{F4D429BB-5A5F-4B28-BFF7-119F91B29507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3739C0C1-B8A6-4CBF-9C63-145258E6017A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3739C0C1-B8A6-4CBF-9C63-145258E6017A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3739C0C1-B8A6-4CBF-9C63-145258E6017A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3739C0C1-B8A6-4CBF-9C63-145258E6017A}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{EC98368B-719B-4A28-A804-4583F5A0F39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC98368B-719B-4A28-A804-4583F5A0F39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC98368B-719B-4A28-A804-4583F5A0F39F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC98368B-719B-4A28-A804-4583F5A0F39F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D914B648-DC1A-4149-B27F-0DC139CBDBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D914B648-DC1A-4149-B27F-0DC139CBDBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D914B648-DC1A-4149-B27F-0DC139CBDBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D914B648-DC1A-4149-B27F-0DC139CBDBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D429BB-5A5F-4B28-BFF7-119F91B29507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D429BB-5A5F-4B28-BFF7-119F91B29507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D429BB-5A5F-4B28-BFF7-119F91B29507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D429BB-5A5F-4B28-BFF7-119F91B29507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5546288C-EBB2-406E-9F78-4F536FBA3BE8}
 	EndGlobalSection
 EndGlobal
